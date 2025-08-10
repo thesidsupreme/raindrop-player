@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.left{
+    width: 25vw;
+    height: 90vh;
+
+}
+.right{
+    width: 75vw;
+    height: 90vh;
+}
+
+.left ul li {
+    width: 30px;
+    height: 30px;
+    list-style: none;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 5px;
+    margin-left: 80px;
+
+    
+}
+.left .logo img{
+    
+
+    height: 30px;
+    align-items: center;
+    gap: 10px;
+
+}
+.left .logo{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-bottom: 10px;
+    
+}
+
+.container1{
+    background-color: black;
+    padding: 10px;
+    margin: 14bpx;
+}
+
