@@ -28,3 +28,18 @@
 .rounded{
     border-radius: 8px;
 }
+
+.m1{
+    margin: 10px;
+}
+
+.p1{
+    padding: 10px;
+}
+
+.fw{
+ font-weight:700;
+}
+.white{
+    color: white;
+}
