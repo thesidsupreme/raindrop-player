@@ -1,6 +1,6 @@
 # Raindrop-Player 🎧
 
-A minimalist and responsive music player inspired by Spotify — built for educational and portfolio use.
+A minimalist and responsive music player app. Hope you like it <3
 
 ## 🚀 Features
 - Music playback (play/pause/seek)
