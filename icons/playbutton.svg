@@ -6,8 +6,8 @@
   role="img"
   aria-label="Play"
 >
-  <!-- Purple circle background -->
+  
   <circle cx="12" cy="12" r="12" fill="#a855f7"/>
-  <!-- Black play triangle -->
+  
   <polygon points="9,7 9,17 17,12" fill="#000000"/>
 </svg>
