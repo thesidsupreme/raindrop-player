@@ -1,18 +1,19 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family:"Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
-.left{
+
+.left {
     width: 25vw;
     height: 100vh;
-    
+
 }
-.right{
+
+.right {
     width: 75vw;
     height: 100vh;
     position: relative;
@@ -29,49 +30,103 @@
     gap: 3px;
     margin-left: 80px;
     font-weight: 700;
-    
+
 }
-.left .logo img{
-    
-    
+
+.left .logo img {
+
+
     height: 30px;
     align-items: center;
     gap: 10px;
-    
-    
+
+
 }
-.left .logo{
+
+.left .logo {
     display: flex;
     align-items: center;
     gap: 3px;
     margin-bottom: 10px;
-    
+
 }
-.left ul li img{
+
+.left ul li img {
     height: 17px;
 }
 
-.Search .logo:nth-child(1){
- font-weight: 900;
+@media screen and (max-width: 480px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .left {
+        height: 0;
+        width: 0;
+        margin: 0;
+        padding: 0;
+    }
+    .left .library ol{
+        height: 0;
+        width: 0;
+        padding: 0;
+        margin: 0;
+    }
+    .right {
+        height: 100vh;
+        width: 100vw;
+        box-sizing: border-box;
+        position: fixed;
+    }
+
+    .card {
+        background-color: rgb(0, 0, 0);
+        width: 50px;
+        padding: 14px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        border-radius: 7px;
+
+
+    }
+
+    .card img {
+        width: 100%;
+    }
+
+    .card .cover1 {
+        height: 50px;
+        object-fit: cover;
+        object-position: center;
+    }
+
 }
 
-.library{
+.Search .logo:nth-child(1) {
+    font-weight: 900;
+}
+
+.library {
     min-height: 50vh;
 }
-.library ol{
+
+.library ol {
     display: flex;
     flex-direction: column;
     margin: 40px;
 }
-.library ol li:hover{
+
+.library ol li:hover {
     color: #af59ff;
 }
 
-.arrow img{
+.arrow img {
     height: 20px;
-    
+
 }
-.nav{
+
+.nav {
     justify-content: space-between;
     margin-top: 10px;
     padding: 20px;
@@ -80,19 +135,19 @@
     height: 47px;
 }
 
-.buttons{
+.buttons {
     display: flex;
     gap: 10px;
 }
 
-button{
+button {
     border: none;
     font-size: 16px;
     font-weight: 700;
-    
+
 }
 
-button:nth-child(2){
+button:nth-child(2) {
     padding: 12px;
     border-radius: 30px;
     padding-left: 21px;
@@ -100,30 +155,31 @@ button:nth-child(2){
     color: rgb(39, 39, 39);
 }
 
-button:nth-child(1){
+button:nth-child(1) {
     color: rgb(207, 205, 205);
     background: rgb(12, 12, 12);
 }
 
-.btn-signup:hover{
+.btn-signup:hover {
     transform: scale(1.05);
     color: white;
     cursor: pointer;
 }
 
-.btn-login:hover{
+.btn-login:hover {
     transform: scale(1.05);
     color: black;
     cursor: pointer;
-    
+
 }
 
 
-.Playlist{
+.Playlist {
     color: white;
     position: relative;
 }
-.cardContainer{
+
+.cardContainer {
     margin: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -132,32 +188,36 @@ button:nth-child(1){
     max-height: 70vh;
     overflow-y: scroll;
 }
-.play-button{
+
+.play-button {
     position: absolute;
     bottom: 70px;
     right: 13px;
     opacity: 0;
 }
 
-.card:hover .play-button{
+.card:hover .play-button {
     opacity: 1;
     transition: 0.5s ease-out;
     bottom: 83px;
     right: 13px;
     cursor: pointer;
-    
+
 
 }
+
 .play-button:hover {
     transform: scale(1.2);
-    
+
 }
-.card:hover{
+
+.card:hover {
     cursor: pointer;
     transform: scale(1.05);
     background-color: #3b3b3b;
 }
-.card{
+
+.card {
     background-color: rgb(0, 0, 0);
     width: 180px;
     padding: 14px;
@@ -165,24 +225,26 @@ button:nth-child(1){
     flex-direction: column;
     position: relative;
     border-radius: 7px;
-    
-    
+
+
 }
-.card img{
+
+.card img {
     width: 100%;
 }
-.card .cover1{
+
+.card .cover1 {
     height: 180px;
     object-fit: cover;
     object-position: center;
 }
 
-.player{
+.player {
     position: absolute;
     bottom: 20;
     color: rgb(161, 29, 29);
     width: 100%;
-    background:#150821;
+    background: #150821;
     padding: 10px;
     box-sizing: border-box;
     display: flex;
@@ -190,7 +252,7 @@ button:nth-child(1){
     justify-content: center;
 }
 
-.player img{
-    
+.player img {
+
     width: 33px;
 }
