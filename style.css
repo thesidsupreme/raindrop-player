@@ -58,6 +58,14 @@
 .library{
     min-height: 50vh;
 }
+.library ol{
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+}
+.library ol li:hover{
+    color: #af59ff;
+}
 
 .arrow img{
     height: 20px;
@@ -118,8 +126,8 @@ button:nth-child(1){
 .cardContainer{
     margin: 10px;
     display: flex;
-    gap: 10px;
     flex-wrap: wrap;
+    gap: 10px;
     justify-content: center;
     max-height: 70vh;
     overflow-y: scroll;
@@ -162,6 +170,11 @@ button:nth-child(1){
 }
 .card img{
     width: 100%;
+}
+.card .cover1{
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .player{
